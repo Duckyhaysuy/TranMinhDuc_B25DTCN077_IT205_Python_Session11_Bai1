@@ -1,11 +1,11 @@
-# Danh sách đơn hàng ban đầu
-delivery_orders = ["GE001", "GE002", "GE003-CANCEL"]
+# Thông tin sản phẩm ban đầu
+product_info = ("SP001", "Áo polo nam", "Size L", 299000)
+product_code = product_info[0]
+product_name = product_info[1]
+product_length = len(product_info)
+product_info = ("SP001", "Áo polo nam", "Size L", 279000)
 
-delivery_orders.append("GE004")
-delivery_orders.insert(0, "GE000")
-delivery_orders[2] = "GE002-UPDATED"
-delivery_orders.remove("GE003-CANCEL")
-transferred_order = delivery_orders.pop()
-
-print("Danh sách đơn hàng còn lại:", delivery_orders)
-print("Đơn hàng được bàn giao:", transferred_order)
+print("Mã sản phẩm:", product_code)
+print("Tên sản phẩm:", product_name)
+print("Số lượng thông tin sản phẩm:", product_length)
+print("Thông tin sản phẩm sau cập nhật:", product_info)
